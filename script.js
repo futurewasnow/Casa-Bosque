@@ -1,7 +1,7 @@
 (function(){
     var script = {
  "mouseWheelEnabled": true,
- "start": "this.init(); this.visibleComponentsIfPlayerFlagEnabled([this.IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A], 'gyroscopeAvailable'); this.syncPlaylists([this.ThumbnailList_034EDD7A_0D3B_3991_41A5_D706671923C0_playlist,this.mainPlayList]); this.playList_8883D57D_A3BA_911D_41D7_D1A065FA950A.set('selectedIndex', 0); if(!this.get('fullscreenAvailable')) { [this.IconButton_EEFF957A_E389_9A06_41E1_2AD21904F8C0].forEach(function(component) { component.set('visible', false); }) }",
+ "start": "this.init(); this.visibleComponentsIfPlayerFlagEnabled([this.IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A], 'gyroscopeAvailable'); this.syncPlaylists([this.ThumbnailList_034EDD7A_0D3B_3991_41A5_D706671923C0_playlist,this.mainPlayList]); this.playList_85C2B60F_A29A_F22F_41D7_57D894B8A483.set('selectedIndex', 0); if(!this.get('fullscreenAvailable')) { [this.IconButton_EEFF957A_E389_9A06_41E1_2AD21904F8C0].forEach(function(component) { component.set('visible', false); }) }",
  "scrollBarOpacity": 0.5,
  "height": "100%",
  "id": "rootPlayer",
@@ -33,40 +33,6 @@
  "desktopMipmappingEnabled": false,
  "mobileMipmappingEnabled": false,
  "definitions": [{
- "initialPosition": {
-  "yaw": 66.49,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "movements": [
-   {
-    "easing": "cubic_in",
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96
-   },
-   {
-    "easing": "linear",
-    "yawDelta": 323,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96
-   },
-   {
-    "easing": "cubic_out",
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96
-   }
-  ],
-  "class": "PanoramaCameraSequence"
- },
- "id": "camera_881D65F9_A3BA_9125_41B0_FE782D1C6105",
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
-},
-{
  "initialPosition": {
   "yaw": 32.97,
   "class": "PanoramaCameraPosition",
@@ -164,7 +130,7 @@
 },
 {
  "initialPosition": {
-  "yaw": 101.41,
+  "yaw": -95.55,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -192,41 +158,7 @@
   ],
   "class": "PanoramaCameraSequence"
  },
- "id": "camera_88DEB5A6_A3BA_912F_4189_0F0FA3A66459",
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
-},
-{
- "initialPosition": {
-  "yaw": 115.98,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": {
-  "restartMovementOnUserInteraction": false,
-  "movements": [
-   {
-    "easing": "cubic_in",
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96
-   },
-   {
-    "easing": "linear",
-    "yawDelta": 323,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96
-   },
-   {
-    "easing": "cubic_out",
-    "yawDelta": 18.5,
-    "class": "DistancePanoramaCameraMovement",
-    "yawSpeed": 7.96
-   }
-  ],
-  "class": "PanoramaCameraSequence"
- },
- "id": "camera_88D435B5_A3BA_912D_41C5_BF102162F74F",
+ "id": "camera_859C569E_A29A_F230_41C5_55F8E118089F",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
@@ -455,7 +387,7 @@
  "thumbnailUrl": "media/panorama_9607C9E2_9D3A_E65E_41DC_C11C109A8A44_t.jpg",
  "id": "panorama_9607C9E2_9D3A_E65E_41DC_C11C109A8A44",
  "class": "Panorama",
- "label": "Casa El Bosque-6",
+ "label": "Washroom",
  "hfovMax": 130,
  "adjacentPanoramas": [
   {
@@ -695,7 +627,7 @@
  "thumbnailUrl": "media/panorama_967E7442_9D3A_EE59_41E2_9385F0B358A1_t.jpg",
  "id": "panorama_967E7442_9D3A_EE59_41E2_9385F0B358A1",
  "class": "Panorama",
- "label": "Casa El Bosque-4",
+ "label": "Patio",
  "hfovMax": 130,
  "adjacentPanoramas": [
   {
@@ -724,6 +656,18 @@
   "class": "ImageResource"
  },
  "height": 12461
+},
+{
+ "items": [
+  {
+   "begin": "this.MapViewerMapPlayer.set('movementMode', 'free_drag_and_rotation')",
+   "media": "this.map_86109065_AD8F_B2C5_41DD_C91069298BD1",
+   "player": "this.MapViewerMapPlayer",
+   "class": "MapPlayListItem"
+  }
+ ],
+ "id": "playList_85C2B60F_A29A_F22F_41D7_57D894B8A483",
+ "class": "PlayList"
 },
 {
  "fieldOfViewOverlayInsideColor": "#FFFFFF",
@@ -1026,7 +970,7 @@
  "thumbnailUrl": "media/panorama_967ABF72_9D3A_FA3E_41E3_59D7B9451464_t.jpg",
  "id": "panorama_967ABF72_9D3A_FA3E_41E3_59D7B9451464",
  "class": "Panorama",
- "label": "Casa El Bosque-5",
+ "label": "Driveway",
  "hfovMax": 130,
  "adjacentPanoramas": [
   {
@@ -1037,6 +981,40 @@
  "hfov": 360,
  "pitch": 0,
  "partial": false
+},
+{
+ "initialPosition": {
+  "yaw": 104.46,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "movements": [
+   {
+    "easing": "cubic_in",
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96
+   },
+   {
+    "easing": "linear",
+    "yawDelta": 323,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96
+   },
+   {
+    "easing": "cubic_out",
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96
+   }
+  ],
+  "class": "PanoramaCameraSequence"
+ },
+ "id": "camera_85F58673_A29A_F2F0_41E5_22865B21F3DA",
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "initialPosition": {
@@ -1071,6 +1049,12 @@
  "id": "panorama_967E7442_9D3A_EE59_41E2_9385F0B358A1_camera",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
+},
+{
+ "viewerArea": "this.MapViewer",
+ "id": "MapViewerMapPlayer",
+ "movementMode": "constrained",
+ "class": "MapPlayer"
 },
 {
  "frames": [
@@ -1289,15 +1273,16 @@
    }
   }
  ],
- "label": "Casa El Bosque-2",
- "hfovMin": "135%",
- "id": "panorama_96135DC1_9D3A_3E5B_41D1_029423427857",
- "class": "Panorama",
+ "vfov": 180,
  "overlays": [
   "this.overlay_92713D7D_9D8A_8A94_41DA_FDC80E254D01",
   "this.panorama_96135DC1_9D3A_3E5B_41D1_029423427857_tcap0"
  ],
- "partial": false,
+ "thumbnailUrl": "media/panorama_96135DC1_9D3A_3E5B_41D1_029423427857_t.jpg",
+ "id": "panorama_96135DC1_9D3A_3E5B_41D1_029423427857",
+ "class": "Panorama",
+ "label": "Bedroom 1",
+ "hfovMax": 130,
  "adjacentPanoramas": [
   {
    "backwardYaw": 157.81,
@@ -1309,9 +1294,7 @@
  ],
  "hfov": 360,
  "pitch": 0,
- "vfov": 180,
- "thumbnailUrl": "media/panorama_96135DC1_9D3A_3E5B_41D1_029423427857_t.jpg",
- "hfovMax": 130
+ "partial": false
 },
 {
  "viewerArea": "this.MainViewer",
@@ -1329,14 +1312,8 @@
  ]
 },
 {
- "viewerArea": "this.MapViewer",
- "id": "MapViewerMapPlayer",
- "movementMode": "constrained",
- "class": "MapPlayer"
-},
-{
  "initialPosition": {
-  "yaw": 17.76,
+  "yaw": 115.98,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -1364,7 +1341,7 @@
   ],
   "class": "PanoramaCameraSequence"
  },
- "id": "camera_88E975EB_A3BA_9125_4184_7E4147A7A61A",
+ "id": "camera_85FE5661_A29A_F210_41D4_CDDD70CB6817",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
@@ -1387,6 +1364,40 @@
  "height": 3000
 },
 {
+ "initialPosition": {
+  "yaw": 66.49,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": {
+  "restartMovementOnUserInteraction": false,
+  "movements": [
+   {
+    "easing": "cubic_in",
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96
+   },
+   {
+    "easing": "linear",
+    "yawDelta": 323,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96
+   },
+   {
+    "easing": "cubic_out",
+    "yawDelta": 18.5,
+    "class": "DistancePanoramaCameraMovement",
+    "yawSpeed": 7.96
+   }
+  ],
+  "class": "PanoramaCameraSequence"
+ },
+ "id": "camera_85A6C6D5_A29A_F230_4190_B0C54CB87D30",
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
+},
+{
  "items": [
   {
    "begin": "this.MapViewerMapPlayer.set('movementMode', 'free_drag_and_rotation')",
@@ -1395,14 +1406,14 @@
    "class": "MapPlayListItem"
   }
  ],
- "id": "playList_8883D57D_A3BA_911D_41D7_D1A065FA950A",
+ "id": "playList_85C35610_A29A_F230_41C0_44D0EE973EB6",
  "class": "PlayList"
 },
 {
  "initialPosition": {
-  "yaw": -178.21,
+  "yaw": -173.91,
   "class": "PanoramaCameraPosition",
-  "pitch": -8.98
+  "pitch": -1.62
  },
  "initialSequence": {
   "restartMovementOnUserInteraction": false,
@@ -1474,10 +1485,25 @@
  "automaticZoomSpeed": 10
 },
 {
+ "buttonToggleHotspots": "this.IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96",
+ "buttonToggleGyroscope": "this.IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A",
+ "mouseControlMode": "drag_acceleration",
+ "touchControlMode": "drag_rotation",
+ "viewerArea": "this.MainViewer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "id": "MainViewerPanoramaPlayer",
+ "buttonCardboardView": [
+  "this.IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB",
+  "this.IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270"
+ ],
+ "class": "PanoramaPlayer",
+ "displayPlaybackBar": true
+},
+{
  "initialPosition": {
-  "yaw": -12.61,
+  "yaw": -65.34,
   "class": "PanoramaCameraPosition",
-  "pitch": 0
+  "pitch": -8.45
  },
  "initialSequence": {
   "restartMovementOnUserInteraction": false,
@@ -1503,36 +1529,9 @@
   ],
   "class": "PanoramaCameraSequence"
  },
- "id": "camera_88FE55D0_A3BA_9163_41E0_884BF06BA9A4",
+ "id": "panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E_camera",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
-},
-{
- "buttonToggleHotspots": "this.IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96",
- "buttonToggleGyroscope": "this.IconButton_EE9FBAB2_E389_8E06_41D7_903ABEDD153A",
- "mouseControlMode": "drag_acceleration",
- "touchControlMode": "drag_rotation",
- "viewerArea": "this.MainViewer",
- "gyroscopeVerticalDraggingEnabled": true,
- "id": "MainViewerPanoramaPlayer",
- "buttonCardboardView": [
-  "this.IconButton_EF7806FA_E38F_8606_41E5_5C4557EBCACB",
-  "this.IconButton_1B9ADD00_16C4_0505_41B4_B043CA1AA270"
- ],
- "class": "PanoramaPlayer",
- "displayPlaybackBar": true
-},
-{
- "items": [
-  {
-   "begin": "this.MapViewerMapPlayer.set('movementMode', 'free_drag_and_rotation')",
-   "media": "this.map_86109065_AD8F_B2C5_41DD_C91069298BD1",
-   "player": "this.MapViewerMapPlayer",
-   "class": "MapPlayListItem"
-  }
- ],
- "id": "playList_8880157D_A3BA_911D_41E1_1AC96D1B3ADA",
- "class": "PlayList"
 },
 {
  "initialPosition": {
@@ -1785,7 +1784,7 @@
    "class": "CubicPanoramaFrame"
   }
  ],
- "label": "Casa El Bosque-7",
+ "label": "Bedroom 2",
  "hfovMin": "135%",
  "id": "panorama_9601D436_9D3A_2E39_41D7_80FB8B7D03E8",
  "class": "Panorama",
@@ -1811,7 +1810,7 @@
 },
 {
  "initialPosition": {
-  "yaw": -22.19,
+  "yaw": -12.61,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -1839,13 +1838,13 @@
   ],
   "class": "PanoramaCameraSequence"
  },
- "id": "camera_88A94597_A3BA_91ED_41DB_5EED3BEFB833",
+ "id": "camera_85805684_A29A_F210_41E2_E34A81334FB3",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
 {
  "initialPosition": {
-  "yaw": -95.55,
+  "yaw": 101.41,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -1873,15 +1872,15 @@
   ],
   "class": "PanoramaCameraSequence"
  },
- "id": "camera_88F255DD_A3BA_911D_41DE_1DA42E3B165D",
+ "id": "camera_85E0F649_A29A_F210_41A9_C88B9AB2CCEC",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
 {
  "initialPosition": {
-  "yaw": -65.34,
+  "yaw": 17.76,
   "class": "PanoramaCameraPosition",
-  "pitch": -8.45
+  "pitch": 0
  },
  "initialSequence": {
   "restartMovementOnUserInteraction": false,
@@ -1907,7 +1906,7 @@
   ],
   "class": "PanoramaCameraSequence"
  },
- "id": "panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E_camera",
+ "id": "camera_85AA16B7_A29A_F270_41E5_7E9FC0E27BCC",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
@@ -2189,10 +2188,7 @@
    }
   }
  ],
- "label": "Casa El Bosque-1",
- "hfovMin": "135%",
- "id": "panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E",
- "class": "Panorama",
+ "vfov": 180,
  "overlays": [
   "this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E_tcap0",
   "this.overlay_BE059908_AD89_F263_41D5_33D456DCB3E6",
@@ -2200,7 +2196,11 @@
   "this.overlay_BD37DC21_AD8A_92A2_41E4_18DDEEDDD83B",
   "this.overlay_BEA08ED7_AD89_8FEF_41E3_4CD7550C23A2"
  ],
- "partial": false,
+ "thumbnailUrl": "media/panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E_t.jpg",
+ "id": "panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E",
+ "class": "Panorama",
+ "label": "Living room",
+ "hfovMax": 130,
  "adjacentPanoramas": [
   {
    "backwardYaw": -64.02,
@@ -2233,13 +2233,11 @@
  ],
  "hfov": 360,
  "pitch": 0,
- "vfov": 180,
- "thumbnailUrl": "media/panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E_t.jpg",
- "hfovMax": 130
+ "partial": false
 },
 {
  "initialPosition": {
-  "yaw": 104.46,
+  "yaw": -22.19,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
@@ -2267,7 +2265,7 @@
   ],
   "class": "PanoramaCameraSequence"
  },
- "id": "camera_88CBD5C3_A3BA_9165_41A9_67A79C968FB0",
+ "id": "camera_85EBD637_A29A_F270_41A2_BDFD606D4D0F",
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
@@ -2488,7 +2486,7 @@
    }
   }
  ],
- "label": "Casa El Bosque-3",
+ "label": "Entrance",
  "hfovMin": "135%",
  "id": "panorama_960C783E_9D3A_2626_41D8_BA8290859E06",
  "class": "Panorama",
@@ -3226,7 +3224,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_88E975EB_A3BA_9125_4184_7E4147A7A61A); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_85AA16B7_A29A_F270_41E5_7E9FC0E27BCC); this.mainPlayList.set('selectedIndex', 0)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -3626,6 +3624,128 @@
  "class": "LensFlarePanoramaOverlay"
 },
 {
+ "progressBarBorderSize": 6,
+ "playbackBarHeadShadowHorizontalLength": 0,
+ "id": "MapViewer",
+ "paddingLeft": 0,
+ "playbackBarProgressBorderRadius": 0,
+ "progressBarBorderRadius": 0,
+ "toolTipShadowOpacity": 1,
+ "width": "100%",
+ "playbackBarBorderRadius": 0,
+ "toolTipFontStyle": "normal",
+ "minHeight": 1,
+ "playbackBarProgressBorderColor": "#000000",
+ "toolTipFontFamily": "Arial",
+ "playbackBarHeadBorderColor": "#000000",
+ "toolTipTextShadowOpacity": 0,
+ "playbackBarHeadBorderRadius": 0,
+ "progressLeft": 0,
+ "propagateClick": false,
+ "playbackBarHeadBorderSize": 0,
+ "playbackBarProgressOpacity": 1,
+ "minWidth": 1,
+ "playbackBarBorderSize": 0,
+ "toolTipShadowVerticalLength": 0,
+ "vrPointerSelectionColor": "#666600",
+ "playbackBarBackgroundOpacity": 1,
+ "toolTipFontColor": "#606060",
+ "transitionDuration": 500,
+ "playbackBarHeadBackgroundColor": [
+  "#111111",
+  "#666666"
+ ],
+ "class": "ViewerArea",
+ "height": "100%",
+ "playbackBarHeadShadowColor": "#000000",
+ "toolTipBackgroundColor": "#F6F6F6",
+ "progressRight": 0,
+ "toolTipShadowHorizontalLength": 0,
+ "firstTransitionDuration": 0,
+ "progressOpacity": 1,
+ "borderSize": 0,
+ "vrPointerSelectionTime": 2000,
+ "progressBarBackgroundColorDirection": "vertical",
+ "playbackBarHeadShadowVerticalLength": 0,
+ "shadow": false,
+ "progressHeight": 6,
+ "playbackBarHeadShadow": true,
+ "progressBottom": 2,
+ "playbackBarHeadBackgroundColorDirection": "vertical",
+ "progressBackgroundOpacity": 1,
+ "playbackBarProgressBackgroundColor": [
+  "#3399FF"
+ ],
+ "playbackBarOpacity": 1,
+ "toolTipPaddingRight": 6,
+ "playbackBarHeadShadowOpacity": 0.7,
+ "toolTipBorderSize": 1,
+ "toolTipPaddingLeft": 6,
+ "toolTipPaddingTop": 4,
+ "vrPointerColor": "#FFFFFF",
+ "toolTipDisplayTime": 600,
+ "progressBarOpacity": 1,
+ "playbackBarBorderColor": "#FFFFFF",
+ "paddingRight": 0,
+ "transitionMode": "blending",
+ "displayTooltipInTouchScreens": true,
+ "progressBorderSize": 0,
+ "toolTipBorderRadius": 3,
+ "borderRadius": 0,
+ "progressBorderRadius": 0,
+ "playbackBarProgressBackgroundColorRatios": [
+  0
+ ],
+ "playbackBarLeft": 0,
+ "progressBackgroundColorRatios": [
+  0.01
+ ],
+ "playbackBarHeadHeight": 15,
+ "playbackBarHeadShadowBlurRadius": 3,
+ "playbackBarHeadBackgroundColorRatios": [
+  0,
+  1
+ ],
+ "progressBarBorderColor": "#0066FF",
+ "toolTipBorderColor": "#767676",
+ "progressBarBackgroundColorRatios": [
+  0
+ ],
+ "progressBackgroundColorDirection": "vertical",
+ "toolTipShadowSpread": 0,
+ "toolTipShadowBlurRadius": 3,
+ "playbackBarBottom": 0,
+ "toolTipTextShadowColor": "#000000",
+ "toolTipOpacity": 1,
+ "playbackBarHeadOpacity": 1,
+ "progressBarBackgroundColor": [
+  "#3399FF"
+ ],
+ "paddingTop": 0,
+ "progressBorderColor": "#FFFFFF",
+ "toolTipPaddingBottom": 4,
+ "toolTipFontSize": 12,
+ "toolTipTextShadowBlurRadius": 3,
+ "progressBackgroundColor": [
+  "#FFFFFF"
+ ],
+ "paddingBottom": 0,
+ "playbackBarProgressBackgroundColorDirection": "vertical",
+ "toolTipShadowColor": "#333333",
+ "playbackBarBackgroundColor": [
+  "#FFFFFF"
+ ],
+ "data": {
+  "name": "Floor Plan"
+ },
+ "playbackBarHeight": 10,
+ "playbackBarHeadWidth": 6,
+ "playbackBarBackgroundColorDirection": "vertical",
+ "toolTipFontWeight": "normal",
+ "playbackBarProgressBorderSize": 0,
+ "playbackBarRight": 0
+},
+{
  "useHandCursor": true,
  "maps": [
   {
@@ -3648,7 +3768,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_88A94597_A3BA_91ED_41DB_5EED3BEFB833); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_85EBD637_A29A_F270_41A2_BDFD606D4D0F); this.mainPlayList.set('selectedIndex', 0)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -3880,128 +4000,6 @@
  "maxWidth": 60
 },
 {
- "progressBarBorderSize": 6,
- "playbackBarHeadShadowHorizontalLength": 0,
- "id": "MapViewer",
- "paddingLeft": 0,
- "playbackBarProgressBorderRadius": 0,
- "progressBarBorderRadius": 0,
- "toolTipShadowOpacity": 1,
- "width": "100%",
- "playbackBarBorderRadius": 0,
- "toolTipFontStyle": "normal",
- "minHeight": 1,
- "playbackBarProgressBorderColor": "#000000",
- "toolTipFontFamily": "Arial",
- "playbackBarHeadBorderColor": "#000000",
- "toolTipTextShadowOpacity": 0,
- "playbackBarHeadBorderRadius": 0,
- "progressLeft": 0,
- "propagateClick": false,
- "playbackBarHeadBorderSize": 0,
- "playbackBarProgressOpacity": 1,
- "minWidth": 1,
- "playbackBarBorderSize": 0,
- "toolTipShadowVerticalLength": 0,
- "vrPointerSelectionColor": "#666600",
- "playbackBarBackgroundOpacity": 1,
- "toolTipFontColor": "#606060",
- "transitionDuration": 500,
- "playbackBarHeadBackgroundColor": [
-  "#111111",
-  "#666666"
- ],
- "class": "ViewerArea",
- "height": "100%",
- "playbackBarHeadShadowColor": "#000000",
- "toolTipBackgroundColor": "#F6F6F6",
- "progressRight": 0,
- "toolTipShadowHorizontalLength": 0,
- "firstTransitionDuration": 0,
- "progressOpacity": 1,
- "borderSize": 0,
- "vrPointerSelectionTime": 2000,
- "progressBarBackgroundColorDirection": "vertical",
- "playbackBarHeadShadowVerticalLength": 0,
- "shadow": false,
- "progressHeight": 6,
- "playbackBarHeadShadow": true,
- "progressBottom": 2,
- "playbackBarHeadBackgroundColorDirection": "vertical",
- "progressBackgroundOpacity": 1,
- "playbackBarProgressBackgroundColor": [
-  "#3399FF"
- ],
- "playbackBarOpacity": 1,
- "toolTipPaddingRight": 6,
- "playbackBarHeadShadowOpacity": 0.7,
- "toolTipBorderSize": 1,
- "toolTipPaddingLeft": 6,
- "toolTipPaddingTop": 4,
- "vrPointerColor": "#FFFFFF",
- "toolTipDisplayTime": 600,
- "progressBarOpacity": 1,
- "playbackBarBorderColor": "#FFFFFF",
- "paddingRight": 0,
- "transitionMode": "blending",
- "displayTooltipInTouchScreens": true,
- "progressBorderSize": 0,
- "toolTipBorderRadius": 3,
- "borderRadius": 0,
- "progressBorderRadius": 0,
- "playbackBarProgressBackgroundColorRatios": [
-  0
- ],
- "playbackBarLeft": 0,
- "progressBackgroundColorRatios": [
-  0.01
- ],
- "playbackBarHeadHeight": 15,
- "playbackBarHeadShadowBlurRadius": 3,
- "playbackBarHeadBackgroundColorRatios": [
-  0,
-  1
- ],
- "progressBarBorderColor": "#0066FF",
- "toolTipBorderColor": "#767676",
- "progressBarBackgroundColorRatios": [
-  0
- ],
- "progressBackgroundColorDirection": "vertical",
- "toolTipShadowSpread": 0,
- "toolTipShadowBlurRadius": 3,
- "playbackBarBottom": 0,
- "toolTipTextShadowColor": "#000000",
- "toolTipOpacity": 1,
- "playbackBarHeadOpacity": 1,
- "progressBarBackgroundColor": [
-  "#3399FF"
- ],
- "paddingTop": 0,
- "progressBorderColor": "#FFFFFF",
- "toolTipPaddingBottom": 4,
- "toolTipFontSize": 12,
- "toolTipTextShadowBlurRadius": 3,
- "progressBackgroundColor": [
-  "#FFFFFF"
- ],
- "paddingBottom": 0,
- "playbackBarProgressBackgroundColorDirection": "vertical",
- "toolTipShadowColor": "#333333",
- "playbackBarBackgroundColor": [
-  "#FFFFFF"
- ],
- "data": {
-  "name": "Floor Plan"
- },
- "playbackBarHeight": 10,
- "playbackBarHeadWidth": 6,
- "playbackBarBackgroundColorDirection": "vertical",
- "toolTipFontWeight": "normal",
- "playbackBarProgressBorderSize": 0,
- "playbackBarRight": 0
-},
-{
  "items": [
   {
    "media": "this.album_837CAF75_AD86_8EDC_41BB_6F960D812BA1_0",
@@ -4214,7 +4212,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_881D65F9_A3BA_9125_41B0_FE782D1C6105); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_85A6C6D5_A29A_F230_4190_B0C54CB87D30); this.mainPlayList.set('selectedIndex', 0)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -4280,7 +4278,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_960C783E_9D3A_2626_41D8_BA8290859E06, this.camera_88F255DD_A3BA_911D_41DE_1DA42E3B165D); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_960C783E_9D3A_2626_41D8_BA8290859E06, this.camera_859C569E_A29A_F230_41C5_55F8E118089F); this.mainPlayList.set('selectedIndex', 2)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -4326,7 +4324,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_9601D436_9D3A_2E39_41D7_80FB8B7D03E8, this.camera_88D435B5_A3BA_912D_41C5_BF102162F74F); this.mainPlayList.set('selectedIndex', 6)",
+   "click": "this.startPanoramaWithCamera(this.panorama_9601D436_9D3A_2E39_41D7_80FB8B7D03E8, this.camera_85FE5661_A29A_F210_41D4_CDDD70CB6817); this.mainPlayList.set('selectedIndex', 6)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -4372,7 +4370,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_9607C9E2_9D3A_E65E_41DC_C11C109A8A44, this.camera_88FE55D0_A3BA_9163_41E0_884BF06BA9A4); this.mainPlayList.set('selectedIndex', 5)",
+   "click": "this.startPanoramaWithCamera(this.panorama_9607C9E2_9D3A_E65E_41DC_C11C109A8A44, this.camera_85805684_A29A_F210_41E2_E34A81334FB3); this.mainPlayList.set('selectedIndex', 5)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -4418,7 +4416,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_96135DC1_9D3A_3E5B_41D1_029423427857, this.camera_88CBD5C3_A3BA_9165_41A9_67A79C968FB0); this.mainPlayList.set('selectedIndex', 1)",
+   "click": "this.startPanoramaWithCamera(this.panorama_96135DC1_9D3A_3E5B_41D1_029423427857, this.camera_85F58673_A29A_F2F0_41E5_22865B21F3DA); this.mainPlayList.set('selectedIndex', 1)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -4576,7 +4574,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_88DEB5A6_A3BA_912F_4189_0F0FA3A66459); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_9107F2A3_9D3A_2ADE_41DC_62542739152E, this.camera_85E0F649_A29A_F210_41A9_C88B9AB2CCEC); this.mainPlayList.set('selectedIndex', 0)",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
   }
@@ -4690,7 +4688,7 @@
  "width": 510,
  "borderRadius": 0,
  "minHeight": 1,
- "text": "2 bedroom house",
+ "text": "2 bedroom home",
  "propagateClick": true,
  "top": 5,
  "verticalAlign": "top",
@@ -4725,7 +4723,7 @@
  "width": 404,
  "borderRadius": 0,
  "minHeight": 1,
- "text": "El Bosque,10 min de la fortuna",
+ "text": "in el bosque",
  "propagateClick": true,
  "verticalAlign": "top",
  "textShadowOpacity": 1,
@@ -5072,10 +5070,10 @@
   1
  ],
  "propagateClick": false,
- "scrollBarWidth": 10,
  "top": "5%",
  "verticalAlign": "top",
  "bottom": "5%",
+ "scrollBarWidth": 10,
  "minWidth": 1,
  "backgroundColor": [
   "#FFFFFF",
@@ -5116,14 +5114,14 @@
  "minHeight": 1,
  "overflow": "visible",
  "propagateClick": false,
- "scrollBarWidth": 10,
  "top": "5%",
  "verticalAlign": "top",
  "bottom": "80%",
+ "scrollBarWidth": 10,
  "minWidth": 1,
  "class": "Container",
- "gap": 10,
  "paddingTop": 20,
+ "gap": 10,
  "borderSize": 0,
  "paddingBottom": 0,
  "contentOpaque": false,
@@ -5160,10 +5158,10 @@
   1
  ],
  "propagateClick": false,
- "scrollBarWidth": 10,
  "top": "7%",
  "verticalAlign": "top",
  "bottom": "7%",
+ "scrollBarWidth": 10,
  "minWidth": 1,
  "backgroundColor": [
   "#FFFFFF",
@@ -5212,10 +5210,10 @@
   1
  ],
  "propagateClick": false,
- "scrollBarWidth": 10,
  "top": "7%",
  "verticalAlign": "top",
  "bottom": "7%",
+ "scrollBarWidth": 10,
  "minWidth": 1,
  "backgroundColor": [
   "#FFFFFF",
@@ -5263,10 +5261,10 @@
   1
  ],
  "propagateClick": false,
- "scrollBarWidth": 10,
  "top": "7%",
  "verticalAlign": "top",
  "bottom": "7%",
+ "scrollBarWidth": 10,
  "minWidth": 1,
  "backgroundColor": [
   "#FFFFFF",
@@ -5315,10 +5313,10 @@
   1
  ],
  "propagateClick": false,
- "scrollBarWidth": 10,
  "top": "5%",
  "verticalAlign": "top",
  "bottom": "5%",
+ "scrollBarWidth": 10,
  "minWidth": 1,
  "backgroundColor": [
   "#FFFFFF",
@@ -5359,14 +5357,14 @@
  "minHeight": 1,
  "overflow": "visible",
  "propagateClick": false,
- "scrollBarWidth": 10,
  "top": "5%",
  "verticalAlign": "top",
  "bottom": "80%",
+ "scrollBarWidth": 10,
  "minWidth": 1,
  "class": "Container",
- "gap": 10,
  "paddingTop": 20,
+ "gap": 10,
  "borderSize": 0,
  "paddingBottom": 0,
  "contentOpaque": false,
@@ -5770,6 +5768,7 @@
  "rollOverBackgroundOpacity": 0.8,
  "horizontalAlign": "center",
  "iconWidth": 32,
+ "visible": false,
  "data": {
   "name": "Button panorama list"
  },
@@ -5962,6 +5961,7 @@
  "rollOverBackgroundOpacity": 0.8,
  "horizontalAlign": "center",
  "iconWidth": 32,
+ "visible": false,
  "data": {
   "name": "Button photoalbum"
  },
@@ -7326,7 +7326,7 @@
  "borderRadius": 0,
  "insetBorder": false,
  "minHeight": 1,
- "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.55330038866!2d-73.99492968084243!3d40.75084469078082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9f775f259%3A0x999668d0d7c3fd7d!2s400+5th+Ave%2C+New+York%2C+NY+10018!5e0!3m2!1ses!2sus!4v1467271743182\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen>",
+ "url": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1412.6501360586071!2d-84.62130665089126!3d10.441852369789768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDI2JzMxLjIiTiA4NMKwMzcnMTMuMCJX!5e1!3m2!1sen!2sca!4v1712302815395!5m2!1sen!2sca",
  "backgroundColorRatios": [
   0
  ],
@@ -7884,7 +7884,7 @@
  "backgroundOpacity": 0,
  "width": "100%",
  "borderRadius": 0,
- "url": "skin/Image_06C5BBA5_1140_A63F_41A7_E6D01D4CC397.jpg",
+ "url": "skin/Image_06C5BBA5_1140_A63F_41A7_E6D01D4CC397.png",
  "minHeight": 1,
  "propagateClick": false,
  "top": "0%",
@@ -7900,7 +7900,7 @@
  "data": {
   "name": "Image"
  },
- "scaleMode": "fit_outside",
+ "scaleMode": "fit_to_height",
  "maxWidth": 2000
 },
 {
@@ -8045,7 +8045,7 @@
  "class": "HTMLText",
  "borderSize": 0,
  "paddingTop": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.75vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:5.13vh;font-family:'Bebas Neue Bold';\">This cute two bedroom house</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:3.46vh;font-family:'Bebas Neue Bold';\">located in el bosque, 10 minute from la fortuna center</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.05vh;font-family:'Montserrat';\">features a 2 bedroom home, a shower, a garden, all appliences, internet, electrity, water, and doggy</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.05vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\">Integer gravida dui quis euismod placerat. Maecenas quis accumsan ipsum. Aliquam gravida velit at dolor mollis, quis luctus mauris vulputate. Proin condimentum id nunc sed sollicitudin.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:2.62vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:2.62vh;font-family:'Bebas Neue Bold';\"><B>Donec feugiat:</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Nisl nec mi sollicitudin facilisis </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Nam sed faucibus est.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Ut eget lorem sed leo.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Sollicitudin tempor sit amet non urna. </SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Aliquam feugiat mauris sit amet.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:2.62vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:2.62vh;font-family:'Bebas Neue Bold';\"><B>Price:</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:3.66vh;font-family:'Bebas Neue Bold';\"><B>$100,000 Col per mes</B></SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.75vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:5.13vh;font-family:'Montserrat';\">2 bedroom house</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:2.62vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>This little 2 bedroom house in calm and natural environment in el Bosque, close to La Fortuna, comes full equiped with one bedroom, one office with A/C, well equiped kitchen and a good security system.</B></SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.26vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.63vh;font-family:'Montserrat';\"><B>It features:</B></SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.26vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.57vh;\">  \u2022  </SPAN><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>Beautiful view from the bedroom and office windows.</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.57vh;\">  \u2022  </SPAN><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>11min car drive from La Fortuna. </B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.57vh;\">  \u2022  </SPAN><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>Bus station &amp; little shop 10min away walking. </B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.57vh;\">  \u2022  </SPAN><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>Delicious soda around the corner. </B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.57vh;\">  \u2022  </SPAN><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>Bird watching in your own garden. </B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.57vh;\">  \u2022  </SPAN><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>Next to a natural reserve with trails and river. </B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.57vh;\">  \u2022  </SPAN><SPAN STYLE=\"font-size:1.26vh;font-family:'Montserrat';\"><B>View on Arenal volcano very near by. </B></SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.26vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#00a3e1;font-size:1.78vh;font-family:'Montserrat';\">Free from 26th of May until 31st of August.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.26vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:2.62vh;font-family:'Bebas Neue Bold';\"><B>Price:</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:3.66vh;font-family:'Bebas Neue Bold';\"><B>220,000 Col per month</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:2.62vh;font-family:'Bebas Neue Bold';\"><B>price includes:</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Furniture</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Fridge and oven</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Internet</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Electricity</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> \u2022 Air conditioning</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:1.68vh;font-family:'Bebas Neue Bold';\"><B>deposit required</B></SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:1.68vh;font-family:'Bebas Neue Bold';\"><B>discount possible if you are willing to take care of my rescue dog</B></SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
  "paddingBottom": 20,
  "shadow": false,
  "scrollBarColor": "#04A3E1",
@@ -8068,7 +8068,7 @@
   "#000000"
  ],
  "minHeight": 1,
- "click": "this.openLink('https://wa.me/5068645070?text=I'm%20interested%20in%20your%20house%20for%20rent', '_blank')",
+ "click": "this.openLink('https://wa.me/5068645070?text=I'm%20interested%20in%20your%20house%20for%20rent', '_self')",
  "width": "46%",
  "backgroundColorRatios": [
   0
@@ -8239,7 +8239,7 @@
  "class": "HTMLText",
  "borderSize": 0,
  "paddingTop": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.75vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:6.7vh;font-family:'Bebas Neue Bold';\">location</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.88vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:3.46vh;font-family:'Bebas Neue Bold';\">address line 1</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:3.46vh;font-family:'Bebas Neue Bold';\">address line 2</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:5.13vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac.</SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.75vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:5.76vh;font-family:'Montserrat';\">El Bosque</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.88vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:2.3vh;font-family:'Montserrat';\">Calle reserva, La Fortuna, Alajuela province, Costa Rica</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:5.13vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;font-family:'Montserrat';\">Located 10 mintues from la fortuna center, it is right next to the natural reserve, close to the Chalets Silencio del Bosque Soda and Super Alex conveince store.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\"> </SPAN></SPAN></DIV></div>",
  "paddingBottom": 20,
  "shadow": false,
  "scrollBarColor": "#04A3E1",
@@ -8321,7 +8321,7 @@
  "class": "HTMLText",
  "borderSize": 0,
  "paddingTop": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.75vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:6.07vh;font-family:'Bebas Neue Bold';\">real estate agent</SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:7.75vh;font-family:'Bebas Neue Bold';\">___</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:5.65vh;font-family:'Montserrat';\">Virtual tour by</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:5.65vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p></div>",
  "paddingBottom": 10,
  "shadow": false,
  "scrollBarColor": "#04A3E1",
@@ -8379,14 +8379,14 @@
  "backgroundOpacity": 0,
  "paddingLeft": 0,
  "paddingRight": 0,
- "width": "25%",
+ "width": "23.305%",
  "borderRadius": 0,
- "url": "skin/Image_0B48D65D_11C0_6E0F_41A2_4D6F373BABA0.jpg",
+ "url": "skin/Image_0B48D65D_11C0_6E0F_41A2_4D6F373BABA0.png",
  "minHeight": 1,
  "propagateClick": false,
  "minWidth": 1,
  "verticalAlign": "top",
- "height": "100%",
+ "height": "26.667%",
  "class": "Image",
  "borderSize": 0,
  "paddingTop": 0,
@@ -8417,7 +8417,7 @@
  "class": "HTMLText",
  "borderSize": 0,
  "paddingTop": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:3.46vh;font-family:'Bebas Neue Bold';\">john doe</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.99vh;font-family:'Bebas Neue Bold';\">licensed real estate salesperson</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.88vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#999999;font-size:1.88vh;font-family:'Bebas Neue Bold';\">Tlf.: +11 111 111 111</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#999999;font-size:1.88vh;font-family:'Bebas Neue Bold';\">jhondoe@realestate.com</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#999999;font-size:1.88vh;font-family:'Bebas Neue Bold';\">www.loremipsum.com</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;\">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac, imperdiet non dolor.</SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#04a3e1;font-size:3.46vh;font-family:'Montserrat';\">You See 360</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.99vh;font-family:'AvenirNext LT Pro Regular';\">the virtual tour company</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.88vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#999999;font-size:1.88vh;font-family:'AvenirNext LT Pro Regular';\">TL.: +15146239235</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#999999;font-size:1.88vh;font-family:'AvenirNext LT Pro Regular';\">realestate@yousee360.com</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"color:#999999;font-size:1.88vh;font-family:'AvenirNext LT Pro Regular';\">www.yousee360.com</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><p STYLE=\"margin:0; line-height:1.15vh;\"><BR STYLE=\"letter-spacing:0vh;color:#000000;font-size:1.05vh;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vh;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.15vh;font-family:'Open Sans';\">Let your clients see your propeties in the most engaging and realistic immersive experience. Contct us today for a quote.</SPAN></SPAN></DIV></div>",
  "paddingBottom": 10,
  "shadow": false,
  "scrollBarColor": "#04A3E1",
